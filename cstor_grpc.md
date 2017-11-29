@@ -28,3 +28,17 @@ $ git submodule update --init
 $ make
 $ [sudo] make install
 ```
+# Install yaml-cpp
+## prerequisites:
+```
+$ [sudo] apt-get install cmake
+```
+## Installation steps:
+```
+$ git clone https://github.com/jbeder/yaml-cpp.git
+$ cd yaml-cpp
+$ makir build
+$ cd src
+$ cmake -DBUILD_SHARED_LIBS=ON ..
+$ [sudo] cp -r ../include/yaml-cpp /usr/include/
+```
