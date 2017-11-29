@@ -5,6 +5,7 @@ $ sudo apt-get install autoconf automake libtool curl make g++ unzip
 ```
 ## Installation steps:
 ```
+$ git clone https://github.com/google/protobuf.git
 $ ./autogen.sh
 $ ./configure
 $ make
