@@ -16,9 +16,7 @@ $ sudo ldconfig # refresh shared library cache.
 # Install grpc(c++)
 ## prerequisites:
 ```
-$ [sudo] apt-get install build-essential autoconf libtool
-$ [sudo] apt-get install libgflags-dev libgtest-dev
-$ [sudo] apt-get install clang libc++-dev
+$ [sudo] apt-get install build-essential autoconf libtool libgflags-dev libgtest-dev clang libc++-dev
 ```
 ## Installation steps:
 ```
@@ -40,5 +38,5 @@ $ cd yaml-cpp
 $ makir build
 $ cd src
 $ cmake -DBUILD_SHARED_LIBS=ON ..
-$ [sudo] cp -r ../include/yaml-cpp /usr/include/
+$ sudo make install
 ```
